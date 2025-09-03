@@ -15,6 +15,14 @@ int main() {
         double l = i, r = i + 1, mid;
         if (fabs(f(l)) < eps) {
             cout << fixed << setprecision(2) << l << " ";
+            cout << "left" << endl;
+            cnt ++;
+            continue;
+        } 
+        if (fabs(f(r)) < eps) {
+            cout << fixed << setprecision(2) << r << " ";
+            cout << "right" << endl;
+            i++;
             cnt ++;
             continue;
         } 
